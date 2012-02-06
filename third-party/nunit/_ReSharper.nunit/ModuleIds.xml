@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="mscorlib" />
+  <Module PersistentId="9367EC89-6A38-42BA-9607-0DC288E4BC3A" ModuleId="nunit-console" />
+  <Module PersistentId="EBD43A7F-AFCA-4281-BB53-5CDD91F966A3" ModuleId="nunit.core.dll" />
+  <Module PersistentId="61CE9CE5-943E-44D4-A381-814DC1406767" ModuleId="nunit.util.dll" />
+  <Module PersistentId="435428F8-5995-4CE4-8022-93D595A8CC0F" ModuleId="nunit.core.interfaces.dll" />
+</Modules>

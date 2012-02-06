@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1402C22B-3191-4E12-B9B4-1C5FA6F253CA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>disil</RootNamespace>
+    <AssemblyName>disil</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\ReadOnlyDictionary.cs" />
+    <Compile Include="Collections\RedBlackTree.cs" />
+    <Compile Include="Collections\RedBlackTreeNode.cs" />
+    <Compile Include="Collections\RegionMap.cs" />
+    <Compile Include="FriendAssemblies.cs" />
+    <Compile Include="InternalErrorException.cs" />
+    <Compile Include="IO\SubStream.cs" />
+    <Compile Include="IR\BlockReference.cs" />
+    <Compile Include="IR\ClrHeader.cs" />
+    <Compile Include="IR\ClrHeaderFlags.cs" />
+    <Compile Include="IR\ClrMetadataRoot.cs" />
+    <Compile Include="IR\DataDirectoryName.cs" />
+    <Compile Include="IR\DllCharacteristics.cs" />
+    <Compile Include="IR\ImageType.cs" />
+    <Compile Include="IR\MachineType.cs" />
+    <Compile Include="IR\FileCharacteristics.cs" />
+    <Compile Include="IR\ManagedPEFile.cs" />
+    <Compile Include="IR\Module.cs" />
+    <Compile Include="IR\PEHeader.cs" />
+    <Compile Include="IR\SectionFlags.cs" />
+    <Compile Include="IR\SectionHeader.cs" />
+    <Compile Include="IR\StreamHeader.cs" />
+    <Compile Include="IR\TableID.cs" />
+    <Compile Include="IR\WindowsSubsystem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IR\SafeUtf8Str.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="IR\TablesHeader.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

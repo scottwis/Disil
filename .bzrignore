@@ -1,0 +1,17 @@
+*.ReSharper.user
+*_Resharper.*
+**/bin
+**/obj
+*.idc
+*_ReSharper.*
+*.suo
+*.csproj.user
+third-party/nunit/src/GuiException/UiException/data/
+
+third-party/nunit/src/GuiRunner/nunit-gui-exe/Properties/
+
+third-party/nunit/src/tests/loadtest-assembly/Properties/
+
+*.pidb
+src/disil.userprefs
+third-party/nunit/src/ClientUtilities/util/Transform.resources
